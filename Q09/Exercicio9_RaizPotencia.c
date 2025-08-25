@@ -13,7 +13,7 @@ int main()
     scanf("%lf", &numero);
 
     potencia = pow(numero, 2);
-    raiz = sqrt(numero);
+	    raiz = sqrt(numero);
 
     printf("\nRAIZ QUADRADA DE %.0lf  = %.2lf \n%.0lf ^ 2 = %.0lf", numero, raiz, numero, potencia);
 

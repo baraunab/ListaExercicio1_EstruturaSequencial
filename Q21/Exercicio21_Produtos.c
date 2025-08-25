@@ -4,8 +4,10 @@ pagamento da somatória destes valores. Calcular e exibir o troco que deverá ser 
 #include <stdio.h>
 
 int main(){
-    float produtos[4];
+    float produtos1, produto2, produto3, produto4, produto5;
     float pagamento, valor_total = 0, troco;
+    
+    
     
     for(int i = 0; i < 5; i++){
         printf("INSIRA O VALOR DO PRODUTO %d: ", i+1);

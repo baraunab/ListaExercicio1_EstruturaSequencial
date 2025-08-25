@@ -6,19 +6,15 @@ Calcule e imprima quantos salários mínimos ganha esse funcionário.*/
 int main(){
     float salario_funcionario, salario_min = 0, calculo = 0;
 
-    printf("INSIRA O VALOR DO SEU SALARIO: ");
-    scanf("%f", &salario_funcionario);
-
     printf("INSIRA O VALOR DO SALARIO MINIMO ATUAL: ");
     scanf("%f", &salario_min);
 
+    printf("INSIRA O VALOR DO SEU SALARIO: ");
+    scanf("%f", &salario_funcionario);
+
     calculo = salario_funcionario/salario_min;
 
-    if (fmod(calculo, 2) == 0){
-        printf("nVOCE RECEBE %.0f SALARIO(S) MINIMO(S)", calculo);
-    }else{
-        printf("\nVOCE RECEBE APROXIMADAMENTE %.1f SALARIO(S) MINIMO(S)", calculo);
-    }
+	printf("\nVOCE RECEBE %.0f SALARIO(S) MINIMO(S)", calculo);
 
     return 0;
 }

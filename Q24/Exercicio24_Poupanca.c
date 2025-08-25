@@ -25,10 +25,7 @@ int main (){
 	
 	valor_acumulado = (aplicacao_mensal * taxa_simp - 1) / meses;
 	
-	printf("\ntaxa simples: %.2f \n\n\APLICACAO MENSAL: R$%.2f \n- SEU RENDIMENTO SERA: R$%.2f", taxa_simp,1 aplicacao_mensal, valor_acumulado);
-	
-	
-	
+	printf("\ntaxa simples: %.2f \n\n\APLICACAO MENSAL: R$%.2f \n- SEU RENDIMENTO SERA: R$%.2f", taxa_simp, aplicacao_mensal, valor_acumulado);
 	
 	return 0;
 }
