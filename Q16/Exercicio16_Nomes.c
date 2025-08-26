@@ -6,26 +6,55 @@ um após o outro, o outro nome (o segundo) será impresso na segunda linha.*/
 
 int main(){
 
-   char string[50] = "Hello world";
-   printf( "Original string: %s\n", string ); //printing the string
-  
-   // Extract the first token
-   char * token = strtok(string, " ");
-   
-   printf( " %s\n", token ); //printing the token
-   printf( "String after strtok(): %s\n\n --------------", string ); //printing the string
-   
-   char nome[199];
-   printf("INSIRA SEU NOME: ");
-   scanf ("%[^\n]%*c", nome);
+	char nome1[100];
+	char sobrenome1[100];
+	char ultimonome1[100];
+	 
+	char nome2[100];
+	char sobrenome2[100];
+	char ultimonome2[100];
 	
-	      char * token1 = strtok(nome, " ");
+	char nome3[100];
+	char sobrenome3[100];
+	char ultimonome3[100];
+	
+	printf("INSIRA TRES NOMES A SEGUIR SEPARADO POR NOME, SOBRENOME E ULTIMO NOME\n");
+	
+	printf("\nNome: ");
+	scanf("%s", &nome1);
+	
+	printf("Sobrenome: ");
+	scanf("%s", &sobrenome1);
+	
+	printf("Ultimo nome: ");
+	scanf("%s", &ultimonome1);
+	
+	printf("\n--- SEGUNDO NOME ---\n");
 
-      // loop through the string to extract all other tokens
-      while( token1 != NULL ) {
-         printf( " %s\n", token1 ); //printing each token
-         token1 = strtok(NULL, " ");
-      }
+	printf("\nNome: ");
+	scanf("%s", &nome2);
+	
+	printf("Sobrenome: ");
+	scanf("%s", &sobrenome2);
+	
+	printf("Ultimo nome: ");
+	scanf("%s", &ultimonome2);
+	
+	printf("\n--- TERCEIRO NOME ---\n");
+
+	printf("\nNome: ");
+	scanf("%s", &nome3);
+	
+	printf("Sobrenome: ");
+	scanf("%s", &sobrenome3);
+	
+	printf("Ultimo nome: ");
+	scanf("%s", &ultimonome3);
+	
+	printf("\n--------------\n\nNOMES: %s | %s | %s \nSOBRENOMES: %s | %s | %s", 
+			nome1, nome2, nome3, sobrenome1, sobrenome2, sobrenome3);
+	
+	
    
    return 0;
 }

@@ -1,7 +1,6 @@
 /*8. Faça um algoritmo que receba o valor do salário de um funcionário e o valor do salário mínimo.
 Calcule e imprima quantos salários mínimos ganha esse funcionário.*/
 #include <stdio.h>
-#include <math.h>
 
 int main(){
     float salario_funcionario, salario_min = 0, calculo = 0;

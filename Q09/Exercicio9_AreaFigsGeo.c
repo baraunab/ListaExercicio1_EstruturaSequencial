@@ -2,7 +2,6 @@
      - triângulo; quadrado; círculo; trapézio; retângulo; losango.*/
 
 #include <stdio.h>
-#include <math.h>
 
 int main(){
     float base_triangulo, altura_triangulo, area_triangulo;
@@ -34,7 +33,7 @@ int main(){
     printf("\nINSIRA O TAMANHO DO LADO DO QUADRADO: ");
     scanf("%f", &lado_quadrado);
 
-    area_quadrado = pow(lado_quadrado, 2);
+    area_quadrado = lado_quadrado * lado_quadrado;
 
     printf("\nAREA DO QUADRADO -> %.2f ^ 2 = %.2f", lado_quadrado, area_quadrado);
 
@@ -45,7 +44,7 @@ int main(){
     printf("INSIRA O RAIO DO CIRCULO: ");
     scanf("%f", &raio_circulo);
 
-    area_circulo = (pi * pow(raio_circulo, 2));
+    area_circulo = (pi * (raio_circulo*raio_circulo));
 
     printf("\nAREA DO CIRCULO -> 3.14 x %.2f ^ 2 = %.2f", raio_circulo, area_circulo);
 
@@ -93,7 +92,5 @@ int main(){
     area_losango = (diagonal_maior_losango * diagonal_menor_losango) / 2;
 
     printf("\nAREA DO LOSANGO -> (%.2f x %.2f) / 2 = %.2f", diagonal_maior_losango, diagonal_menor_losango, area_losango);
-
-
 
 }

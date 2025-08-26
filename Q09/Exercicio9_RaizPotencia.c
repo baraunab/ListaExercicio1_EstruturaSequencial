@@ -3,7 +3,6 @@
         - esse número elevado ao quadrado.*/
 
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
@@ -12,8 +11,8 @@ int main()
     printf("INSIRA UM NUMERO: ");
     scanf("%lf", &numero);
 
-    potencia = pow(numero, 2);
-	    raiz = sqrt(numero);
+    potencia = numero * numero;
+	raiz = sqrt(numero);
 
     printf("\nRAIZ QUADRADA DE %.0lf  = %.2lf \n%.0lf ^ 2 = %.0lf", numero, raiz, numero, potencia);
 

@@ -2,6 +2,7 @@
 quantidade1 valor1 quantidade2 valor2 quantidade3 valor3. O programa deve calcular esses valores
 seguindo a fórmula total = quantidade1* valor1 + quantidade2 * valor2 + quantidade3 * valor3.
 O valor total deve ser apresentado no final da execução do programa.*/
+#include <stdio.h>
 
 int main(){
     int quantidade1, valor1, quantidade2, valor2, quantidade3, valor3, formula_total;
