@@ -2,10 +2,11 @@
 
 #include <stdio.h>
 
-int main()
-{
+int main(){
+	//Declaração de variáveis
     float n1, n2, n3, media = 0;
-
+	
+	//Entrada de dados - Insere 3 notas
     printf("Insira a primeira nota: ");
     scanf("%f", &n1);
 
@@ -15,8 +16,10 @@ int main()
     printf("Insira a terceira nota: ");
     scanf("%f", &n3);
 
+	//Processamento - Media aritmética das 3 notas
     media = (n1 + n2 + n3)/3;
-
+	
+	//Saída de dados - Imprime a média calculada
     printf ("\nNOTA 1: %f \nNOTA 2: %f \nNOTA 3: %f \nMEDIA FINAL: %f", n1, n2, n3, media);
 
     return 0;

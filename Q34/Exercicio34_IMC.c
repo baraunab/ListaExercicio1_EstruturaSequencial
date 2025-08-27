@@ -4,17 +4,20 @@ corpórea. Ele mede a relação entre peso e altura (peso em Kg, dividido pelo quad
 #include <math.h>
 
 int main (){
-	
+	//Declaração de variáveis
 	float peso, altura, imc = 0;
 	
+	//Entrada de dados - informa peso e altura
 	printf("INSIRA SEU PESO: ");
 	scanf("%f", &peso);
 	
 	printf("INFORME SUA ALTURA: ");
 	scanf("%f", &altura);
 	
+	//Processamento - calcula o imc
 	imc = peso / (pow(altura, 2));
 		
+	//Saída de dados - infoma o imc
 	printf("\nSEU IMC: %.2f", imc);
 	
 }

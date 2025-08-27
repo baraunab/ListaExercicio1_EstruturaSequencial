@@ -6,13 +6,17 @@ que o desconto foi de 9%.*/
 #include <stdio.h>
 
 int main (){
+	//Declaração de variáveis
 	float preco_produto, preco_desconto;
 	
+	//Entrada de dados - informa o preço do produto
 	printf("INSIRA O VALOR DO PRODUTO: ");
 	scanf("%f", &preco_produto);
 	
+	//Processamento - calcula o preço do produto com desconto
 	preco_desconto = preco_produto - (0.09 * preco_produto);
 	
+	//Saída de dados - imprime o valor com desconto
 	printf("\nPRECO ORIGINAL: R$%.2f \nPRECO COM DESCONTO DE 9%%: R$%.2f", preco_produto, preco_desconto);
 	return 0;
 	

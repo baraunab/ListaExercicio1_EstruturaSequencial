@@ -10,8 +10,10 @@ Sabendo-se que a fórmula usada para este cálculo é:
 #include <math.h>
 
 int main (){
+	//Declaração de variáveis
 	float valor_acumulado, taxa, taxa_simp, meses, aplicacao_mensal;
 	
+	//Entrada de dados - informa aplicação mensal, taxa e numero de meses
 	printf("INFORME O VALOR DA APLICACAO MENSAL: ");
 	scanf("%f", &aplicacao_mensal);
 	
@@ -21,10 +23,14 @@ int main (){
 	printf("INFORME O NUMERO DE MESES: ");
 	scanf("%f", &meses);
 	
+	//Processamento - calcula rendimento
+	taxa /= 100;
+	
 	taxa_simp = pow((1+taxa), meses);
 	
-	valor_acumulado = (aplicacao_mensal * taxa_simp - 1) / meses;
+	valor_acumulado = (aplicacao_mensal * taxa_simp - 1) / taxa;
 	
+	//Saída de dados - informa o rendimento
 	printf("\ntaxa simples: %.2f \n\n\APLICACAO MENSAL: R$%.2f \n- SEU RENDIMENTO SERA: R$%.2f", taxa_simp, aplicacao_mensal, valor_acumulado);
 	
 	return 0;

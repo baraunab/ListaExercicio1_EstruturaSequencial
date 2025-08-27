@@ -6,7 +6,7 @@ int main (){
 	//Declaração de Variáveis
 	float salario_funcionario, imposto_renda;
 	
-	//Entrada de dados
+	//Entrada de dados - informa o salario
 	printf("INSIRA SEU SALARIO PARA CALCULAR O IMPOSTO DE RENDA: R$");
 	scanf("%f", &salario_funcionario);
 	

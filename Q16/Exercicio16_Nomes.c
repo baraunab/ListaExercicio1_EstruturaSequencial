@@ -5,7 +5,8 @@ um após o outro, o outro nome (o segundo) será impresso na segunda linha.*/
 #include <string.h>
 
 int main(){
-
+	
+	//Declaração de variáveis
 	char nome1[100];
 	char sobrenome1[100];
 	char ultimonome1[100];
@@ -18,6 +19,7 @@ int main(){
 	char sobrenome3[100];
 	char ultimonome3[100];
 	
+	//Entrada de dados - Informa 3 nomes diferentes
 	printf("INSIRA TRES NOMES A SEGUIR SEPARADO POR NOME, SOBRENOME E ULTIMO NOME\n");
 	
 	printf("\nNome: ");
@@ -51,6 +53,7 @@ int main(){
 	printf("Ultimo nome: ");
 	scanf("%s", &ultimonome3);
 	
+	//Saída de dados - exibe somente nome e sobrenome
 	printf("\n--------------\n\nNOMES: %s | %s | %s \nSOBRENOMES: %s | %s | %s", 
 			nome1, nome2, nome3, sobrenome1, sobrenome2, sobrenome3);
 	

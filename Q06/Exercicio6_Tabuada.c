@@ -2,15 +2,17 @@
 
 #include <stdio.h>
 
-int main()
-{
+int main(){
+	//Declaração de variáveis
     int numero=0;
-
+	
+	//Entrada de dados - informa número para realização da tabuada
     printf("INSIRA UM NUMERO: ");
     scanf("%d", &numero);
 
 	printf("\nTABUADA DO %d \n\n", numero);
     
+	//Processamento e saída de dados - Calcula os primeiros 10 valores da tabuada do número informado 
 	printf("%d x 1 = %d\n", numero, numero*1);
 	printf("%d x 2 = %d\n", numero, numero*2);
 	printf("%d x 3 = %d\n", numero, numero*3);

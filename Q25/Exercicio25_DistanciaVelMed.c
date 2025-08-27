@@ -5,16 +5,21 @@ qual a velocidade em metros/segundo.*/
 #include <stdio.h>
 
 int main(){
-	float ponto1, ponto2, velocidade, tempo_medio;
+	//Declaração de variáveis
+	float distancia, velocidade, tempo_percorrido;
+
+	//Entrada de dados - informa a distancia e velocidade percorrida
+	printf("INSIRA A DISTANCIA PERCORRIDA: ");
+	scanf("%f", &distancia);
 	
-	printf("INFORME O PRIMEIRO PONTO: ");
-	scanf("%f", &ponto1);
+	printf("INFORME A VELOCIDADE MEDIA: ");
+	scanf("%f", &velocidade);
 	
-	printf("INFORME O SEGUNDO PONTO: ");
-	scanf("%f", &ponto2);
+	//Processamento - converte os dados informados e calcula a velocidade media
+	tempo_percorrido = (distancia * 1000) / (velocidade / 3.6);
 	
-	distancia = 
-	
+	//Saida de dados - informa o tempo percorrido em m/s
+	printf("Tempo percorrido: %.2f m/s", tempo_percorrido);
 	
 	return 0;
 }

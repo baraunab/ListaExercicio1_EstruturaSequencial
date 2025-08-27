@@ -6,8 +6,10 @@ valor da construção é cobrado por m3 de água que a piscina conterá e o preço é d
 #include <stdio.h>
 
 int main (){
+	//Declaração de variáveis
 	float comprimento, largura, profundidade, area, valor_construcao;
 	
+	//Entrada de dados - informa dimensões da piscina
 	printf("INFORME O COMPRIMENTO DA PISCINA: ");
 	scanf("%f", &comprimento);
 	
@@ -17,10 +19,12 @@ int main (){
 	printf("INFORME A PROFUNDIDADE: ");
 	scanf("%f", &profundidade);
 	
+	//Processamento - calcula a area da piscina e o valor da construcao
 	area = (comprimento * largura) * profundidade;
 	
 	valor_construcao = area * 45;
 	
+	//Saida de dados - Imprime o valor da construção
 	printf("\nVALOR DA CONSTRUCAO: %.2f", valor_construcao); 
 	
 	return 0;

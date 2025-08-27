@@ -4,9 +4,11 @@ pagamento da somatória destes valores. Calcular e exibir o troco que deverá ser 
 #include <stdio.h>
 
 int main(){
+	//Declaração de variáveis
     float produto1, produto2, produto3, produto4, produto5;
     float pagamento, valor_total = 0, troco;
     
+    //Entrada de dados - informa o vaor dos produtos;
     printf("INSIRA O VALOR DO PRODUTO 1: ");
     scanf("%f", &produto1);
     
@@ -22,12 +24,14 @@ int main(){
     printf("INSIRA O VALOR DO PRODUTO 5: ");
     scanf("%f", &produto5);
     
+    //Processamento - calcula o preço total e o troco
     valor_total = produto1 + produto2 + produto3 + produto4 + produto5;
    	troco = pagamento - valor_total;
 
     printf("\n\nVALOR TOTAL: R$ %.2f\nINFORME O VALOR REFERENTE AO PAGAMENTO: ", valor_total);
     scanf("%f", &pagamento);
-
+	
+	//Saída de dados - exibe os produtos, seus preços e o troco
     printf("\n\n----- NOTA FISCAL -----\n\n");
     
     printf("PRODUTO 1: R$%.2f\n", produto1);
@@ -38,7 +42,6 @@ int main(){
     
     printf("\n--- --- --- --- ---\nVALOR TOTAL: R$ %.2f\nVALOR PAGO: %.2f", valor_total, pagamento);
 
-    troco = pagamento - valor_total;
     printf("\nTROCO: R$%.2f \n\nPAGAMENTO CONCLUIDO!", troco);
     	
  	printf("\n\n----- NOTA FISCAL -----\n");

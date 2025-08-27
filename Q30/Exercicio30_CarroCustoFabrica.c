@@ -7,15 +7,19 @@ consumidor do mesmo.*/
 #include <stdio.h>
 
 int main (){
+	//Declaração de variáveis
 	float custo_consumidor, custo_fabrica, custo_impostos, porcentagem_distribuidor = 0.28, imposto = 0.45;
 	
+	//Entrada de dados - informa o valor de fábrica
 	printf("INSIRA O CUSTO DE FABRICA DE UM CARRO: ");
 	scanf("%f", &custo_fabrica);
 	
+	//Processamento - calcula o custo com adicional de impostos e preço do distribuidor
 	custo_impostos = custo_fabrica + (custo_fabrica * imposto); 
 	custo_consumidor = custo_impostos + (custo_impostos * porcentagem_distribuidor);
 
-	printf("\nCUSTO DE FABRICA: R$%.2f \nCUSTO COM IMPOSTOS: R$%.2f\nCUSTO COM PORCENTAGEM DO DISTRIBUIDOR E FINAL DO CONSUMIDOR: R$%.2f", 
+	//Saída de dados - Informa o preço final do consumidor
+	printf("\nCUSTO DE FABRICA: R$%.2f \nCUSTO COM IMPOSTOS: R$%.2f\nCUSTO FINAL: R$%.2f", 
 			custo_fabrica, custo_impostos, custo_consumidor);
 	
 	return 0;	

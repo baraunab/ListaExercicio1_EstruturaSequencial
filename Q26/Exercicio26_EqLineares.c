@@ -7,8 +7,10 @@ exibir os valores de x e y.*/
 #include <stdio.h>
 
 int main (){
+	//Declaração de variáveis
 	int a, b, c, d, e, f, x, y;
 	
+	//Entrada de dados - informa os valores dos coeficientes
 	printf("INSIRA O VALOR DE A: ");
 	scanf("%d", &a);
 	
@@ -27,9 +29,11 @@ int main (){
 	printf("INSIRA O VALOR DE F: ");
 	scanf("%d", &f);
 	
+	//Processamento - calcula as equações
 	x = (c*e) - (b*f) / (a*e) - (b*d);
 	y = (a*f) - (c*d) / (a*e) - (b*d);
 	
+	//Saída de dados - Imprime o valor das equações
 	printf("x = %d * %d - %d * %d / %d * %d - %d * %d = %d\n", c, e, b, f, a, e, b, d);
 	printf("y = %d * %d - %d * %d / %d * %d - %d * %d = %d", a, f, c, d, a, e, b, d);
 
