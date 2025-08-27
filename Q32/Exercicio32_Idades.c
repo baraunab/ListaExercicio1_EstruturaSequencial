@@ -5,6 +5,7 @@
 #include <stdio.h>
 
 int main (){
+	
 	int ano_nascimento, ano_atual, idade;
 	
 	printf("INFORME SEU ANO DE NASCIMENTO: ");

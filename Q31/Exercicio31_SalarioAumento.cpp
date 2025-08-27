@@ -8,7 +8,7 @@ int main (){
 	printf("INFORME O VALOR DO SEU SALARIO: ");
 	scanf("%f", &salario);
 	
-	aumento = salario + (salario * 0.37);
+	aumento = 1.37 * salario;
 	
 	printf("SEU SALARIO DE R$%.2f COM AUMENTO DE 37%% FICARA: R$%.2f", salario, aumento);
 	
